@@ -57,6 +57,7 @@
             android:layout_marginTop="14dp"
             android:background="#FFFFFF"
             android:hint="Item name"
+            android:inputType="text"
             android:padding="12dp"/>
 
         <EditText
@@ -67,6 +68,7 @@
             android:background="#FFFFFF"
             android:gravity="top"
             android:hint="Item description"
+            android:inputType="textMultiLine"
             android:padding="12dp"/>
 
         <EditText
@@ -76,6 +78,7 @@
             android:layout_marginTop="12dp"
             android:background="#FFFFFF"
             android:hint="Location on campus"
+            android:inputType="text"
             android:padding="12dp"/>
 
         <EditText
@@ -85,6 +88,7 @@
             android:layout_marginTop="12dp"
             android:background="#FFFFFF"
             android:hint="Date (DD/MM/YYYY)"
+            android:inputType="date"
             android:padding="12dp"/>
 
         <EditText

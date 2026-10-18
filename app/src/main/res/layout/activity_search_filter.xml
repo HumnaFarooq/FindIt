@@ -26,6 +26,7 @@
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
             android:hint="Enter item name or keyword"
+            android:inputType="text"
             android:padding="12dp"/>
 
         <TextView
@@ -79,6 +80,7 @@
             android:layout_marginTop="8dp"
             android:background="#FFFFFF"
             android:hint="Enter location"
+            android:inputType="text"
             android:padding="12dp"/>
 
         <Button
