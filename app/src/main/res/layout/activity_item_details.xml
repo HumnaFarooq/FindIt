@@ -1,0 +1,109 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Details"
+            android:textColor="#153448"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:background="#DCEEF2"
+            android:contentDescription="Item image"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_gallery"/>
+
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Black Backpack"
+            android:textColor="#153448"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvItemStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FCE8D5"
+            android:padding="8dp"
+            android:text="LOST"
+            android:textColor="#9A4D0B"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            android:textColor="#153448"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvItemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="A black backpack with books inside."
+            android:textColor="#64748B"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvItemLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Location: University Library"
+            android:textColor="#153448"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvItemDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Date: 15 October"
+            android:textColor="#153448"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvItemContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact: Student"
+            android:textColor="#153448"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnContactOwner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#176B78"
+            android:text="Contact Reporter"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
