@@ -1,6 +1,6 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F7FB">
@@ -43,6 +43,7 @@
             android:layout_marginTop="20dp"
             android:background="#FFFFFF"
             android:hint="Search items..."
+            android:inputType="text"
             android:padding="12dp"
             android:singleLine="true"/>
 
@@ -83,7 +84,7 @@
             android:backgroundTint="#DDF4E4"
             android:text="Found Items"
             android:textAllCaps="false"
-            android:textColor="#245C3A"/>
+            android:textColor="#153448"/>
 
         <TextView
             android:layout_width="match_parent"
