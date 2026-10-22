@@ -45,7 +45,18 @@
             android:hint="Search items..."
             android:inputType="text"
             android:padding="12dp"
+            android:imeOptions="actionSearch"
             android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#2C3E50"
+            android:text="🔍 Search &amp; Filter Items"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:id="@+id/btnReportItem"
@@ -96,6 +107,7 @@
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/tvRecentItem1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -106,6 +118,7 @@
             android:textSize="16sp"/>
 
         <TextView
+            android:id="@+id/tvRecentItem2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"

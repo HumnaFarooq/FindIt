@@ -1,9 +1,10 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lostScroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FB">
+    android:background="#F5F7FB"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,13 +12,31 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Lost Items"
-            android:textColor="#153448"
-            android:textSize="28sp"
-            android:textStyle="bold"/>
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnBackLost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DCEEF2"
+                android:text="← Home"
+                android:textAllCaps="false"
+                android:textColor="#153448" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:text="Lost Items"
+                android:textColor="#153448"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
         <EditText
             android:id="@+id/etLostSearch"
@@ -25,39 +44,28 @@
             android:layout_height="52dp"
             android:layout_marginTop="18dp"
             android:background="#FFFFFF"
-            android:hint="Search lost items"
+            android:hint="Search lost items..."
             android:inputType="text"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:singleLine="true"/>
 
         <TextView
+            android:id="@+id/tvEmptyLost"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="#FFFFFF"
-            android:padding="18dp"
-            android:text="🎒 Black Backpack\nLocation: University Library\nDate: 15 October\nStatus: LOST"
-            android:textColor="#153448"
-            android:textSize="16sp"/>
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="No lost items found"
+            android:textColor="#64748B"
+            android:textSize="16sp"
+            android:visibility="gone"/>
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/llLostItemsList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:background="#FFFFFF"
-            android:padding="18dp"
-            android:text="📱 Mobile Phone\nLocation: Cafeteria\nDate: 14 October\nStatus: LOST"
-            android:textColor="#153448"
-            android:textSize="16sp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:background="#FFFFFF"
-            android:padding="18dp"
-            android:text="📚 Notebook\nLocation: Classroom 12\nDate: 13 October\nStatus: LOST"
-            android:textColor="#153448"
-            android:textSize="16sp"/>
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"/>
 
     </LinearLayout>
 </ScrollView>
